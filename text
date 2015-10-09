@@ -1,0 +1,6 @@
+background(0);
+size(700,400);
+fill(150,0,150);
+textSize(100);
+textAlign(50);
+text("text",200,150);
