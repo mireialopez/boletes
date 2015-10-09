@@ -1,0 +1,29 @@
+int contador=0;
+int dreta = 0;
+int a =+4;
+
+void setup(){
+size(700,400);}
+
+void draw() {
+  background(0);
+  fill(150,0,150);
+textSize(100);
+text("Contador "+contador,50,150);
+ 
+  dreta=dreta+a;
+  if(dreta>700){
+  a=-4;
+  dreta=dreta+a;
+  }
+  if(dreta<0){
+   a=+4;
+ dreta=dreta+a;
+}
+  fill(150,0,150);
+  ellipse(dreta,300,100,100);
+}
+
+void mouseClicked() {
+  if (contador == contador) {
+    contador=contador+1;}}
