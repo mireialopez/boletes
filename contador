@@ -1,0 +1,12 @@
+int contador=0;
+void setup(){
+size(700,400);}
+void draw() {
+  background(0);
+  fill(150,0,150);
+textSize(100);
+text("Contador "+contador,50,150);
+  }
+void mouseClicked() {
+  if (contador == contador) {
+    contador=contador+1;}}
