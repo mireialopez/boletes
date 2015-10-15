@@ -1,0 +1,41 @@
+PImage img;
+PImage photo;
+int contador=0;
+int dreta = 0;
+int a = 4;
+int b = 0;
+int c = 0;
+
+void setup() {
+   size(800,500);
+   img = loadImage("tom.jpg");
+   photo = loadImage("jerry.jpg");}
+   
+void draw(){
+  background(255);
+  image(img, mouseX, mouseY,200,200);
+  fill(0);
+  textSize(100);
+  text("Contador "+contador,100,100);
+
+dreta=dreta+a;
+  if(dreta>700){
+  a=-4;
+  dreta=dreta+a;
+  }
+  if(dreta<0){
+   a=+4;
+ dreta=dreta+a;
+}
+  image (photo,dreta,300,50,50);
+}
+
+
+void mouseClicked() {
+  b=dreta+100;
+  c=dreta-100;
+ if (b>mouseX) {
+    if (c<mouseX) {
+      if (350>mouseY){
+        if (250<mouseY){
+    contador=contador+1;}}}}}
