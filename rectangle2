@@ -1,0 +1,19 @@
+int a;
+int b;
+int c;
+int d;
+
+void setup(){
+  size(700,500);}
+  
+void draw(){
+  background(255);
+  c=mouseX-a;
+  d=mouseY-b;
+  if(key=='r'){
+  rect(a,b,c,d);  
+}
+  
+void mouseClicked(){
+  a=mouseX;
+  b=mouseY;}
