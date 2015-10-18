@@ -11,6 +11,7 @@ void draw(){
   c=mouseX-a;
   d=mouseY-b;
   if(key=='r'){
+  fill(255,0,0)}
   rect(a,b,c,d);  
 }
   
